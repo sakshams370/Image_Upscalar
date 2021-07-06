@@ -23,6 +23,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.button),
+    path('templates/index.html', views.contact),
     path('output', views.output,name="script"),
     path('external/', views.external),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

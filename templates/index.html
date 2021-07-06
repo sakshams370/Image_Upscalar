@@ -72,7 +72,7 @@ input[type=submit]:hover {
   }
 }
 	</style>
-	</head>
+</head>
 	<body>
 <div class="container">
   <div style="text-align:center">
@@ -84,16 +84,17 @@ input[type=submit]:hover {
       <img src="https://www.w3schools.com/w3images/map.jpg" style="width:100%">
     </div>
     <div class="column">
-      <form action="mailto:sakshams370@gmail.com" method="post" enctype="multipart/form-data" name = "email-form">
+      <form action="mailto:sakshams370@gmail.com" target="_top" method="post" enctype="multipart/form-data" name = "email-form">
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
+        <button class="btn btn-primary btn-dark" type="submit" name= "email-form" value="Submit">Send</button>
       </form>
     </div>
   </div>
 </div>
 </body>
+</html>

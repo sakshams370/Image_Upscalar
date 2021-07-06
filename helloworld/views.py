@@ -8,6 +8,10 @@ def button(request):
 
     return render(request, 'home.html')
 
+def contact(request):
+
+    return render(request, 'index.html')
+
 
 def output(request):
     data = requests.get("https://www.google.com/")
